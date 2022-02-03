@@ -2,34 +2,25 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.label{
-  border: 2px solid #000;
+.label {
+  border: 2px solid black;
   width: 270px;
   margin: 20px auto;
   padding: 0 7px;
 }
 
-.bold{
-  font-weight: 800;
-}
-
-.right{
-  float: right;
-}
-
 header h1 {
-  font-weight: 800;
   text-align: center;
   margin: -4px 0;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.15px
 }
 
 p {
@@ -42,20 +33,28 @@ p {
   clear: right;
 }
 
-.lg{
-  height: 18px; 
+.bold {
+  font-weight: 800;
 }
 
-.lg .md{
+.right {
+  float: right;
+}
+
+.lg {
+  height: 10px;
+}
+
+.lg, .md {
   background-color: black;
   border: 0;
 }
 
-.md{
+.md {
   height: 5px;
 }
 
-.sm-text{
+.sm-text {
   font-size: 0.85rem;
 }
 
@@ -64,7 +63,7 @@ p {
   overflow: hidden;
 }
 
-.calories-info span{
+.calories-info span {
   font-size: 1.2em;
   margin-top: -7px;
 }
@@ -73,6 +72,17 @@ p {
   margin-left: 1em;
 }
 
-.daily-value p :not(.no-divider){
+.dbl-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
   border-bottom: 1px solid #888989;
+}
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
 }
