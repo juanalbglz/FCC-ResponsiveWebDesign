@@ -45,13 +45,13 @@
               <legend>Question 1</legend>
               <ul class="answers-list">
                 <li>
-                  <label for="question-1-answer-1">
-                    <input type="radio" id="question-1-answer-1"/>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" value="true" name="q1"/>True
                   </label>
                 </li>
                 <li>
-                  <label for="question-1-answer-2">
-                    <input type="radio" id="question-1-answer-2"/>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" value="false" name="q1"/>False
                   </label>
                 </li>
               </ul>
@@ -66,13 +66,13 @@
               </legend>
               <ul class="answers-list">
                 <li>
-                  <label for ="question-2-answer-1">
-                    <input type="radio" id="question-2-answer-1"/>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" value="true" name="q2"/>True
                   </label>
                 </li>
                 <li>
-                  <label for="question-2-answer-2">
-                    <input type="radio" id="question-2-answer-2"/>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" value="false" name="q2"/>False
                   </label>
                 </li>
               </ul>
@@ -81,7 +81,26 @@
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="css-q1">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select required name="css-q1" id="css-q1">
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="comments">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea cols="80" rows="5" placeholder="Write your comments here..." id="comments" name="comments"></textarea>
+            </div>
+          </div>
         </section>
+        <input type="submit" value="Submit" id="submit-button" />
       </form>
     </main>
   </body>
