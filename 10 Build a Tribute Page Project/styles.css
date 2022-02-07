@@ -1,0 +1,153 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+  --white:      rgba(254,254,255,255);
+  --blue:       rgba(76,110,161,255);
+  --orange:     rgba(232,125,62,255);
+  --yellow:     rgba(255,255,0,255);
+  --background: rgba(141,191,225,255);
+}
+
+*,
+html,
+body,
+main,
+header,
+h1,
+span,
+main,
+article,
+img,
+figure,
+figcaption,
+p{
+  padding: 0;
+  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+body {
+  background-color: var(--white);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-size: 16px;
+  border: 1px solid red;  
+
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--blue);
+  -ms-flex-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+h1{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  color: var(--white);
+  font-size: 3vw;
+  align-items: center;
+  margin: 0 8vw;
+}
+
+#title > span:first-of-type{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+  margin-left: -25vw;
+}
+
+.blippi-title{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 13vw;
+  color: var(--orange);
+  -webkit-text-stroke: 0.35vw var(--white);
+  padding-top: 2px;
+  margin-bottom: -5vw;
+}
+
+.blippi-title::nth-letter(1){
+  color: var(--orange);
+  -webkit-text-stroke: 3px var(--blue);
+}
+
+img{
+  max-width: fit-content;
+  min-height: 50px;
+  height: 18vw;
+  border-radius: 50%;
+  border: 2vw solid var(--orange);
+  margin: 0 2vw;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+nav {
+  width: auto;
+  height: 100%;
+  flex-grow: 1;
+  margin: 0 2vw;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: auto;
+  height: 90%;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex: 1 1 auto;
+  padding: 5% 0;
+}
+
+nav ul li {
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--orange);
+  flex: 1 1 auto;
+  justify-content: center;
+  background-color: var(--orange);
+  border-bottom: 2px solid var(--blue);
+  border-top: 2px solid var(--blue);
+  border-radius: 2vw;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+
+nav ul li a {
+  font-family: 'Dancing Script', cursive;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 4.5vw;
+  padding: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+nav ul li:hover, 
+nav ul li a:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
