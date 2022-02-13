@@ -16,28 +16,46 @@ body {
   font-size: 1.3em;
 }
 
-.row:nth-child(odd){
+.row:nth-of-type(odd) {
   background-color: #dfdfe2;
+}
+
+.row:nth-of-type(even) {
+  background-color: #d0d0d5;
+}
+
+.row:last-child {
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+p[class~="total"] {
+  border-bottom: 4px double #0a0a23;
+  font-weight: bold;
 }
 
 .row {
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid #0a0a23;
-  padding:4px;
+  padding: 4px;
 }
 
-span:not(.name){
+span:not(.name) {
   margin-left: 10px;
   min-width: 15%;
   text-align: right;
 }
 
-span[class="current"]{
+span[class="current"] {
   font-style: italic;
 }
 
-.name{
+.name {
   width: 100%;
   text-align: left;
+}
+
+.row[tabindex]:hover{
+  background-color: #99c9ff;
 }
