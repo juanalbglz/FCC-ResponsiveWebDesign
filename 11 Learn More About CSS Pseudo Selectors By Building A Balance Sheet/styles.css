@@ -3,3 +3,35 @@ body {
   font-family: Tahoma;
   color: #0a0a23;
 }
+
+#sheet {
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid #d0d0d5;
+}
+
+#header h2 {
+  font-size: 1.3em;
+}
+
+.row{
+  display: flex;
+  justify-content: flex-end;
+}
+
+span:not(.name){
+  margin-left: 10px;
+  min-width: 15%;
+  text-align: right;
+}
+
+span[class="current"]{
+  font-style: italic;
+}
+
+.name{
+  width: 100%;
+  text-align: left;
+}
