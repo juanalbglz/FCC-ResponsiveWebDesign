@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,400&display=swap');
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1.2em;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: orange;
+}
+
+code .note {
+  color: #ffffff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+ul{
+  width: 50%;
+}
+li > p {
+  display: inline-block;
+  font
+}
